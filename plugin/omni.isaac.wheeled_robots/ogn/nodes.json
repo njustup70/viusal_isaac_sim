@@ -1,0 +1,56 @@
+{
+  "extension": "omni.isaac.wheeled_robots",
+  "nodes": {
+    "DifferentialController": {
+      "description": "Differential Controller",
+      "version": 1,
+      "uiName": "Differential Controller",
+      "language": "C++"
+    },
+    "AckermannSteering": {
+      "description": [
+        "NOTE: DEPRECATED as of Isaac Sim 4.1.0 in favour of OgnAckermannController",
+        "Ackermann Steering Geometry"
+      ],
+      "version": 1,
+      "uiName": "Ackermann Steering",
+      "language": "Python"
+    },
+    "AckermannController": {
+      "description": "Ackermann Controller",
+      "version": 1,
+      "uiName": "Ackermann Controller",
+      "language": "Python"
+    },
+    "CheckGoal2D": {
+      "description": "Check if wheeled robot has reached goal",
+      "version": 1,
+      "uiName": "Check Goal 2D",
+      "language": "Python"
+    },
+    "HolonomicController": {
+      "description": "Holonomic Controller",
+      "version": 2,
+      "uiName": "Holonomic Controller",
+      "language": "Python"
+    },
+    "HolonomicRobotUsdSetup": {
+      "description": "setup any robot to be ready to be used by the holonomic controller by extract attributes from USD",
+      "version": 1,
+      "uiName": "Usd Setup Holonomic Robot",
+      "language": "Python"
+    },
+    "QuinticPathPlanner": {
+      "description": "Quintic Path Planner For Wheeled robots",
+      "version": 1,
+      "uiName": "Quintic Path Planner",
+      "language": "Python"
+    },
+    "StanleyControlPID": {
+      "description": "Drive to Target Steering",
+      "version": 1,
+      "uiName": "Stanley Control PID",
+      "language": "Python"
+    }
+  }
+}
