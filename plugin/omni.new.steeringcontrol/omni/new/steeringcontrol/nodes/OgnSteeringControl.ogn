@@ -1,0 +1,108 @@
+{
+    "SteeringControl": {
+        "version": 1,
+        "description": "",
+        "language": "Python",
+        "metadata": {
+            "uiName": "Steering Control"
+        },
+        "inputs": {
+            "exec": {
+                "type": "execution",
+                "description": "exec",
+                "default": 0,
+                "metadata": {
+                    "uiName": "exec"
+                }
+            },
+            "target_linear_x": {
+                "type": "double",
+                "description": "",
+                "default": 0,
+                "metadata": {
+                    "uiName": "target_linear_x"
+                }
+            },
+            "target_linear_y": {
+                "type": "float",
+                "description": "",
+                "default": 0,
+                "metadata": {
+                    "uiName": "target_linear_y"
+                }
+            },
+            "target_angular_z": {
+                "type": "double",
+                "description": "",
+                "default": 0,
+                "metadata": {
+                    "uiName": "target_angular_z"
+                }
+            },
+            "L": {
+                "type": "double",
+                "description": "distance between forward wheels and back wheels",
+                "default": 0.415,
+                "metadata": {
+                    "uiName": "L"
+                }
+            },
+            "dt": {
+                "type": "double",
+                "description": "delta time",
+                "default": 0,
+                "metadata": {
+                    "uiName": "dt"
+                }
+            },
+            "R": {
+                "type": "double",
+                "description": "wheel_Radius",
+                "default": 0.05,
+                "metadata": {
+                    "uiName": "R"
+                }
+            },
+            "min_move_speed": {
+                "type": "double",
+                "description": "",
+                "default": 0.05,
+                "metadata": {
+                    "uiName": "min_move_speed"
+                }
+            },
+            "max_rotational_speed": {
+                "type": "double",
+                "description": "",
+                "default": 10,
+                "metadata": {
+                    "uiName": "max_rotational_speed"
+                }
+            }
+        },
+        "outputs": {
+            "velocity_command": {
+                "type": "double[]",
+                "description": "",
+                "default": [
+                    0.0,
+                    0.0
+                ],
+                "metadata": {
+                    "uiName": "velocity_command"
+                }
+            },
+            "position_command": {
+                "type": "double[]",
+                "description": "",
+                "default": [
+                    0.0,
+                    0.0
+                ],
+                "metadata": {
+                    "uiName": "position_command"
+                }
+            }
+        }
+    }
+}
